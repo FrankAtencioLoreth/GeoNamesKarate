@@ -19,7 +19,7 @@ GeoNamesKarate is a project that automates testing for GeoNames web services usi
 
    ```bash
    git clone https://github.com/FrankAtencioLoreth/GeoNamesKarate.git
-2. **Clone the repository**:
+2. **Navigate to the project directory**:
 
    ```bash
    cd GeoNamesKarate
