@@ -28,7 +28,6 @@ GeoNamesKarate is a project that automates testing for GeoNames web services usi
     gradle test --tests parallelTests -Dkarate.env=preprod -Duser=karate -DbaseUrl=http://api.geonames.org/ -i
    
 ## Structure
-
     ```bash
     └── 📁src
         └── 📁main
