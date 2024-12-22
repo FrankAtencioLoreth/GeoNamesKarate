@@ -53,4 +53,3 @@ GeoNamesKarate is a project that automates testing for GeoNames web services usi
                 └── karate-config.js
                 └── logback-test.xml
                 └── parallelTests.java
-    ```
