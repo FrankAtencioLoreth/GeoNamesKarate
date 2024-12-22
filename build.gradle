@@ -21,6 +21,9 @@ test {
     systemProperty 'karate.env', System.getProperty('karate.env')
     systemProperty 'baseUrl', System.getProperty('baseUrl')
     systemProperty 'user', System.getProperty('user')
+    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
     outputs.upToDateWhen { false }
 }
 

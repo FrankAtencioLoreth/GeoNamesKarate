@@ -9,7 +9,7 @@ Feature: Get geographical data of a country
     * def responseDataColombia = read('classpath:data/responseDataColombiaGet.json')
     * def responseDataNotHaveInformation = read('classpath:data/responseNoHaveInformation.json')
 
-
+  @TEST_001
   Scenario Outline: Get geographical data of a country
     When method get
     Then status 200
@@ -24,6 +24,7 @@ Feature: Get geographical data of a country
       | 0        | -72       |
       | 4.2      | -72.5     |
 
+  @TEST_002
   Scenario Outline: Get geographical data of Colombia
     When method get
     Then status 200
@@ -33,6 +34,7 @@ Feature: Get geographical data of a country
       | latitude | longitude |
       | 4        | -74       |
 
+  @TEST_003
   Scenario Outline: Get geographical data of a country with invalid parameters
     When method get
     Then status 200
@@ -48,6 +50,7 @@ Feature: Get geographical data of a country
       | A8       | -75       |
       | 8        | -A8B      |
 
+  @TEST_004
   Scenario Outline: Get geographical data of a country that not have information
     When method get
     Then status 200
@@ -64,6 +67,7 @@ Feature: Get geographical data of a country
       | latitude | longitude |
       | 90       | 99        |
 
+  @TEST_005
   Scenario Outline: Get geographical data of a country with invalid longitude and latitude
     When method get
     Then status 200
